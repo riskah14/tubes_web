@@ -55,8 +55,8 @@ $set =	false;
 if($set)
 {
 $nm_hp=$_POST['nama_hp'];
-$spek_hp=$_POST['spek_hp'];
 $harga_hp=$_POST['harga_hp'];
+$spek_hp=$_POST['spek_hp'];
 
 $sql=mysqli_query($koneksi,"insert into produk_hp (foto_hp,nama_hp,harga_hp,spek_hp)values('$nama_file','$nm_hp','$harga_hp','$spek_hp')");
 $msg= $msg.'sukses mengupload';
@@ -103,7 +103,6 @@ unlink("galeri/$CekLink[foto_hp]");
 }
 isset($save_file);
 }
-
 //replace di server 
 if($save_file)
 {
@@ -131,12 +130,6 @@ $msg= $msg.'Update Galeri Sukses..'; print "<meta http-equiv=\"refresh\"
 content=\"1;URL=server.php?module=product\">";
 }
 echo "$msg";
-}
-
-
-
-
-
-		
+}		
 
 ?>

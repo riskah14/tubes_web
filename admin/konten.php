@@ -2,11 +2,14 @@
 include "../include/koneksi.php";
 include "../include/konversi_tgl.php";
 //bagian home admin
-if ($_GET['module']=='home') {
-	echo "<h2><center>Halaman Utama<br></h2>
+if ($_GET['module']=='home')
+ {
+	echo "<h2><center>Hi, Admin!<br></h2>
+	<h2><center>Selamat Datang<br></h2>
 	<p class=welcome><center>TOKO HP <b>$_SESSION[namauser]</b><br>
 		Silakan klik menu pilihan disebelah kiri untuk mengelola konten
 		website<br> Terima Kasih</p>
+		<img width=200 height=260 src='logo-2x.png' />
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>

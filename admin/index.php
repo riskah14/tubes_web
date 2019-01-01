@@ -1,4 +1,4 @@
-<html>
+ <html>
 <head> 
     <title>Login Administrator</title>
 
@@ -7,12 +7,11 @@
     .login { 
         margin: 200px auto;
         width: 400px;
-        height: 200px;
+        height: 350px;
         padding: 10px;
         border: 1px solid #ccc;
         background: lightgrey;
     } 
-
     input[type=text], input[type=password] {
         margin: 5px auto;
         width: 94%;
@@ -28,7 +27,6 @@
         background: grey;
         cursor: pointer;
     }
-
 </style>
 </head>
 <body>
@@ -39,8 +37,13 @@
                     <input name="username" type="text" placeholder="masukkan username">
             <label>Password</label>
                     <input  name="password" type="password" placeholder=" Masukkan Password">
-               
+
+            <form action="validate.php" method="post">
+                Enter Image Text
+                <input name="captcha" type="text">
+                <img src="captcha.php" /><br><br>
                 <input type="submit" name="kirim" value="Kirim">
+                </form>
                      
         </form>
     </div>
